@@ -1,5 +1,5 @@
 import re
-f = open('122991.user.js')
+f = open('../Better.Caoliu/script.js')
 re = re.compile('http://.+')
 for line in f:
     m = re.search(line)
