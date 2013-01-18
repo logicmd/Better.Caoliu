@@ -118,7 +118,8 @@
 // @match          http://adcrun.ch/*
 // ==/UserScript==
 (function () {
-	'use strict';
+	//Goddamn sina weibo.
+    //'use strict';
 	var UTILS = {
 		isArrayLike: function (obj) {
 			if (typeof obj !== 'object') {
