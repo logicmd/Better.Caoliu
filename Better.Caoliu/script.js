@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           Better.Caoliu
 // @namespace      Better.Caoliu
-// @version        1.51
+// @version        1.52
 // @updateURL      https://userscripts.org/scripts/source/122991.meta.js
 // @downloadURL    https://userscripts.org/scripts/source/122991.user.js
 // @description    This script removes redirection or ads in Caoliu, linkbucks, adf.ly, imagedunk, imageporter, imgchili, rmdown, ilix.in, 400kb.com, jptorrent.org, ref.so, imagekitty.com and etc.
@@ -118,8 +118,7 @@
 // @match          http://adcrun.ch/*
 // ==/UserScript==
 (function () {
-	//Goddamn sina weibo.
-    //'use strict';
+	'use strict';
 	var UTILS = {
 		isArrayLike: function (obj) {
 			if (typeof obj !== 'object') {
@@ -249,7 +248,7 @@
 		}, {
 			hosts: ['adf.ly', '9.bb', 'u.bb', 'j.gs', 'q.gs'],
 			fn: function () {
-				if(location.pathname.indexOf('/2market.php')!==-1){
+				if(location.pathname.indexOf('/1market.php')!==-1){
 					document.body.innerHTML = '';
 					return;
 				}
@@ -262,7 +261,7 @@
 				UTILS.proxy(function(){
 					if(counter){
 						var url;
-						url = counter.toString().match(/var\s+url\s+=\s+["']([^"']+)["']/)[1];
+						url = counter.toString().match(/var\s+zzz\s*=\s*["']([^"']+)["']/)[1];
 						if(url){
 							location.href = url;
 							document.body.innerHTML = '';
