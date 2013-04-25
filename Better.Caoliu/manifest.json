@@ -97,7 +97,7 @@
     } ],
     "converted_from_user_script": true,
     "name": "Better.Caoliu",
-    "version": "1.51",
+    "version": "1.54",
     "manifest_version": 2,
     "description": "This extention removes redirection or ads in Caoliu, linkbucks, adf.ly, imagedunk, imageporter, imgchili, rmdown, ilix.in and etc.",
     "update_url": "http://clients2.google.com/service/update2/crx"
